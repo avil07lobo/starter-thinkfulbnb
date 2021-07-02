@@ -142,7 +142,7 @@ footer p {
     font-size: 30px;
     padding: 0;
   }
-
+  
    .item {
      flex: 1;
      
@@ -169,7 +169,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-  }
+  } 
   form div {
     display: flex;
     flex-direction: column;
