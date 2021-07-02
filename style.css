@@ -143,13 +143,6 @@ footer p {
     padding: 0;
   }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-    }
-
    .item {
      flex: 1;
      
@@ -170,6 +163,13 @@ footer p {
 }
 
 @media all and (min-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
   form div {
     display: flex;
     flex-direction: column;
