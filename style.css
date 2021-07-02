@@ -1,5 +1,10 @@
 /* -------  General Styles ------- */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -14,6 +19,7 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
+  padding-bottom: 15px;
 }
 
 p {
@@ -30,8 +36,15 @@ section.alternate-background {
   color: #fff;
 }
 
+section.alternate-background ul {
+  width: 80%;
+  padding: 20px 0px 25px 30px;
+}
+
 main img {
-  width: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */
@@ -39,11 +52,6 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
-}
-
-.item {
-  flex: 1;
-  margin: 10px;
 }
 
 .item-double {
@@ -62,6 +70,12 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 header nav ul li {
@@ -104,6 +118,11 @@ form button {
   width: 100%;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* -------  Footer ------- */
 
 footer {
@@ -117,3 +136,94 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  .logo {
+    font-size: 30px;
+    padding: 0;
+  }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+   .item {
+     flex: 1;
+     
+   }
+
+   .about-div, .ideas-div {
+     padding: 15px;
+   }
+
+   .about-div img, .ideas-div img {
+     padding-bottom: 30px;
+   }
+   #host {
+     padding: 30px;
+     
+   }
+
+}
+
+@media all and (min-width: 768px) {
+  form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  form {
+    display: flex;
+  }
+
+  #menu {
+    padding: 0;
+  }  
+  
+  form label, form input, form select {
+    width: 90%;
+    font-size: 12px;
+  }
+  form button {
+    padding: 0;
+    width: 15%;
+
+  }
+
+  .about-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .images {
+    display: flex;
+    margin-right: 10px;
+  }
+
+
+  #host {
+    display: flex;
+    align-items: center;
+  }
+
+  .ideas-div {
+    display: flex;
+  }
+
+  .ideas-img {
+    padding: 10px;
+  }
+
+  
+  form button {
+    padding: 10px;
+  }
+
+  .about-img {
+    padding: 10px;
+  }
+}
